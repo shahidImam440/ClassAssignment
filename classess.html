@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        class automobile{
+            constructor(name,modal,color,autoORmanual,maxheight){
+                    this.name = name;
+                    this.modal =modal;
+                    this.color = color;
+                    this.type =autoORmanual;
+                    this.maxheight=maxheight;
+            }
+            start(){
+                console.log("engine is working properly")
+            }
+            opendoor(){
+                console.log("door is open")
+            }
+
+        }
+
+        
+        // z.start()
+        // console.log(z)
+        class car extends automobile{
+            constructor(name,modal,color,autoORmanual,maxheight,maxspeed){
+                super(name,modal,color,autoORmanual,maxheight)
+                this.maxspeed = maxspeed;
+            }
+
+        }
+        let swift = new car("swift",2020,"black","auto",375,155);
+        console.log(swift)
+</script>
+</body>
+</html>
